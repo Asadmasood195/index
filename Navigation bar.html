@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+    #zz ul ul{
+        display: none;
+    }
+        #zz ul li:hover > ul {
+            display:block;
+ }
+ #zz ul ul ul{
+     margin-left: 100px;
+     position: absolute;
+     top: 0px;
+ }
+        *{
+            padding: 0px;
+            margin:0px;
+        }
+    #zz ul {list-style: none;
+    }
+    #zz ul li{
+        background-color: aqua;
+        width: 100px;
+        height: 40px;
+border: 1px solid white;
+float: left;
+text-align: center;
+padding-top: 5px;
+color: blue;
+position: relative;
+            }
+            #zz ul li:hover{
+                background-color: magenta;
+            }
+    </style>
+</head>
+<body>
+<table>
+    <div id="zz">
+    <ul>
+    <li>Home</li>
+    <li>Class </li>
+    <li>Subjects 
+        <ul>
+            <li>English</li>
+            <li>Urdu</li>
+            <li>PK</li>
+            <li>IS</li>
+            <li>Math 
+                <ul>
+                    <li>General Scince</li>
+                    <li>Arts</li>
+                    <li id="vv">Computer scince</li>
+                </ul>
+            </li>
+    </li>
+    </ul>
+    <li>About</li>
+    </ul>
+    </div>
+</table>
+
+
+</body>
+</html>
